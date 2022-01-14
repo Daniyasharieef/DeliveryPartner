@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "321113388237",
+    "firebase_url": "https://deliverypartner-7698d-default-rtdb.firebaseio.com",
+    "project_id": "deliverypartner-7698d",
+    "storage_bucket": "deliverypartner-7698d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321113388237:android:e13f24f16abda4d0f06584",
+        "android_client_info": {
+          "package_name": "com.example.delivery_partner_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321113388237-ju7ucki53g4s1l4rq3pa0vvtpdqnm5ep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.delivery_partner_app",
+            "certificate_hash": "5f69415732cfa190881e937d99fb09edd731a594"
+          }
+        },
+        {
+          "client_id": "321113388237-ql40b1bou3m7qel43chqu2c2d1mhdcfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqu9ypX9KzO9YQm8GXrQH6Cmw-M7CHluQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321113388237-ql40b1bou3m7qel43chqu2c2d1mhdcfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321113388237:android:55f7cf3b80c93fbaf06584",
+        "android_client_info": {
+          "package_name": "com.example.hotelKingsdharbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321113388237-ods9qrnq2dl9m4e6ekm32u68dbtmslrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hotelKingsdharbar",
+            "certificate_hash": "5f69415732cfa190881e937d99fb09edd731a594"
+          }
+        },
+        {
+          "client_id": "321113388237-ql40b1bou3m7qel43chqu2c2d1mhdcfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqu9ypX9KzO9YQm8GXrQH6Cmw-M7CHluQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321113388237-ql40b1bou3m7qel43chqu2c2d1mhdcfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
