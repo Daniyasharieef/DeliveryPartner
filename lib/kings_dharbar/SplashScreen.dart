@@ -43,11 +43,11 @@ class SplashScreenState extends State<SplashScreen>
   
   void navigationPage()  {
 
-    if (email == "") {
-      //Navigator.pushNamed(context, '/login');
-      Navigator.push(
-          context, MaterialPageRoute(builder: (_) => Introscreen()));
-    } else {
+     if (email==email) {
+    //   //Navigator.pushNamed(context, '/login');
+    //   Navigator.push(
+    //       context, MaterialPageRoute(builder: (_) => Introscreen()));
+    // } else {
       Navigator.push(
           context, MaterialPageRoute(builder: (_) => Profilepages(email)));
     }
