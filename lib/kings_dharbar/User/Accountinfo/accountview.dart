@@ -10,21 +10,16 @@ import 'editprofile.dart';
 import 'logout.dart';
 
 class Accountview extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:UserProfile("_email")
-    );
+    return MaterialApp(
+        debugShowCheckedModeBanner: false, home: UserProfile("_email"));
   }
 }
 
-
-
 class UserProfile extends StatefulWidget {
   UserProfile(String _email);
+
   @override
   _UserProfileState createState() => _UserProfileState();
 }
@@ -55,7 +50,9 @@ class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     setProfileDetails(context);
-    return Scaffold(
+    return Scaffold(appBar: AppBar(centerTitle:true,title: Text("AccountView"),
+      backgroundColor: Color(0xFFA90725),
+    ),
       body: Container(
         alignment: Alignment.center,
         padding: EdgeInsets.only(top: 20.0),
@@ -84,9 +81,10 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
               SizedBox(height: 60.0),
+              Divider(),
               ListTile(
+
                   leading: Icon(
                     Icons.person,
                     size: 40.0,
@@ -97,12 +95,14 @@ class _UserProfileState extends State<UserProfile> {
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                   ),
-                  trailing: Icon(
-                    Icons.keyboard_arrow_right,
-                    size: 35.0,
-                  ),
-                  onTap: () {}
-                  // async{
+                  trailing: IconButton(
+                      icon: Icon(Icons.keyboard_arrow_right, color: Colors.red),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (_) => Editprofile()));
+                      }),
+
+                // async{
                   // bool connectionStatus = await _userService.checkInternetConnectivity();
                   //
                   // if(connectionStatus){
@@ -116,80 +116,88 @@ class _UserProfileState extends State<UserProfile> {
                   // }
                   // },
                   ),
+              Divider(),
               ListTile(
-                  leading: Icon(
-                    Icons.favorite,
-                    size: 40.0,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    'WishList',
-                    style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-                  ),
-                  trailing: Icon(
-                    Icons.keyboard_arrow_right,
-                    size: 35.0,
-                  ),
-                  onTap: () {WishList;}
-                  // async{
-                  // bool connectionStatus = await _userService.checkInternetConnectivity();
-                  //
-                  // if(connectionStatus){
-                  // Loader.showLoadingScreen(context, _keyLoader);
-                  // List userList = await _userService.userWishlist();
-                  // Navigator.of(_keyLoader.currentContext, rootNavigator: true).pop();
-                  // Navigator.pushNamed(context, '/wishlist',arguments: {'userList':userList});
-                  // }
-                  // else{
-                  // internetConnectionDialog(context);
-                  // }
-                  // },
-                  ),
+                leading: Icon(
+                  Icons.favorite,
+                  size: 40.0,
+                  color: Colors.red,
+                ),
+                title: Text(
+                  'WishList',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+                ),
+                trailing:  IconButton(
+                    icon: Icon(Icons.keyboard_arrow_right, color: Colors.red),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => WishList()));
+                    }),
+
+
+                // async{
+                // bool connectionStatus = await _userService.checkInternetConnectivity();
+                //
+                // if(connectionStatus){
+                // Loader.showLoadingScreen(context, _keyLoader);
+                // List userList = await _userService.userWishlist();
+                // Navigator.of(_keyLoader.currentContext, rootNavigator: true).pop();
+                // Navigator.pushNamed(context, '/wishlist',arguments: {'userList':userList});
+                // }
+                // else{
+                // internetConnectionDialog(context);
+                // }
+                // },
+              ),
+              Divider(),
               ListTile(
-                  leading: const Icon(
-                    Icons.fastfood,
-                    size: 40.0,
-                  ),
-                  title: Text(
-                    'Order History',
-                    style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-                  ),
-                  trailing: Icon(
-                    Icons.keyboard_arrow_right,
-                    size: 35.0,
-                  ),
-                  onTap: () {OrderHistory;}
-                  // async{
-                  // bool connectionStatus = await _userService.checkInternetConnectivity();
-                  //
-                  // if(connectionStatus){
-                  // Loader.showLoadingScreen(context, _keyLoader);
-                  // List orderData = await _checkoutService.listPlacedOrder();
-                  // Navigator.of(_keyLoader.currentContext, rootNavigator: true).pop();
-                  // Navigator.popAndPushNamed(context, '/placedOrder',arguments: {'data': orderData});
-                  // }
-                  // else{
-                  // internetConnectionDialog(context);
-                  // }
-                  // },
-                  ),
+                leading: const Icon(
+                  Icons.fastfood,
+                  color: Colors.blueGrey,
+                  size: 40.0,
+                ),
+                title: Text(
+                  'Order History',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+                ),
+                trailing: IconButton(
+                    icon: Icon(Icons.keyboard_arrow_right, color: Colors.red),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => OrderHistory()));
+                    }),
+                // async{
+                // bool connectionStatus = await _userService.checkInternetConnectivity();
+                //
+                // if(connectionStatus){
+                // Loader.showLoadingScreen(context, _keyLoader);
+                // List orderData = await _checkoutService.listPlacedOrder();
+                // Navigator.of(_keyLoader.currentContext, rootNavigator: true).pop();
+                // Navigator.popAndPushNamed(context, '/placedOrder',arguments: {'data': orderData});
+                // }
+                // else{
+                // internetConnectionDialog(context);
+                // }
+                // },
+              ),
+              Divider(),
               ListTile(
                 leading: Icon(
                   Icons.settings,
                   size: 40.0,
-                  color: Colors.grey,
+                  color: Colors.black26,
                 ),
                 title: const Text(
                   'Settings',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                 ),
-                trailing: Icon(
-                  Icons.keyboard_arrow_right,
-                  size: 35.0,
-                ),
-                onTap: () {Editprofile;},
+                trailing: IconButton(
+                    icon: Icon(Icons.keyboard_arrow_right, color: Colors.red),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => Editprofile()));
+                    }),
+
                 // async{
                 // bool connectionStatus = await _userService.checkInternetConnectivity();
                 //
@@ -202,15 +210,17 @@ class _UserProfileState extends State<UserProfile> {
                 //
                 // },
               ),
-
+              Divider(height:10,),
               SizedBox(height: 30.0),
               ButtonTheme(
                   minWidth: MediaQuery.of(context).size.width - 50.0,
                   height: 50.0,
                   child: FlatButton(
-                    onPressed: () {LogOutPage;
-                      // _userService.logOut(context);
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (_) => LogOutPage()));
                     },
+                    // _userService.logOut(context);
                     color: Colors.white,
                     child: Text(
                       'Logout',
@@ -299,255 +309,3 @@ void internetConnectionDialog(BuildContext context) async {
         );
       });
 }
-
-// class Userdata {
-//
-//   String userFirstName;
-//   String userLastName;
-//   String userEmail;
-//
-//   Userdata({
-//
-//     required this.userFirstName,
-//     required this.userLastName,
-//     required this.userEmail
-//   });
-//
-//   factory Userdata.fromJson(Map<String, dynamic> json) {
-//     print(json['Hwappy_Name']);
-//     return Userdata(
-//         userFirstName: json['Hwappy_Name'],
-//         userLastName: json['Hwappy_Name'],
-//         userEmail: json['Hwappy_Email_Id']
-//     );
-//   }
-// }
-
-// class _ProfilePageState extends State<Accountview>{
-//
-//   bool checkBoxValue = false;
-//   late double _height;
-//   late double _width;
-//   late double _pixelRatio;
-//   late bool _large;
-//   late bool _medium;
-//
-//   late String _email ;
-//
-//   Future<Null> getSharedPrefs() async {
-//     SharedPreferences prefs = await SharedPreferences.getInstance();
-//     print("email");
-//     setState(() {
-//       _email =  prefs.getString("counter")!;
-//       print(_email);
-//     });
-//
-//   }
-//
-//   @override
-//   void initState() {
-//     print("ini");
-//     super.initState();
-//     _email = "";
-//     getSharedPrefs();
-//
-//   }
-//
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     _height = MediaQuery.of(context).size.height;
-//     _width = MediaQuery.of(context).size.width;
-//     _pixelRatio = MediaQuery.of(context).devicePixelRatio;
-//     _large =  ResponsiveWidget.isScreenLarge(_width, _pixelRatio);
-//     _medium =  ResponsiveWidget.isScreenMedium(_width, _pixelRatio);
-//
-//     return Material(
-//       child: Scaffold(
-//         body: Container(
-//           height: _height,
-//           width: _width,
-//           margin: EdgeInsets.only(bottom: 5),
-//           child: SingleChildScrollView(
-//             child: Column(
-//               children: <Widget>[
-//                 Opacity(opacity: 0.88,child:  AppBar(
-//                     leading: IconButton(
-//                          icon: Icon(Icons.arrow_back,color: Colors.white),
-//                      onPressed: () {
-//                        Navigator.push(
-//                            context, MaterialPageRoute(builder: (_) => Profilepages(_email)));
-//                      },
-//                            ),
-//                       backgroundColor: Color(0xFFA90725),
-//                       elevation: 0,
-//                    title: Text("My Account"),
-//                    actions: <Widget>[
-//
-//                     ],
-//                  ),),
-//                 clipShape(),
-//                 firstname(),
-//                 lastname(),
-//                 emailid(),
-//                 SizedBox(height: _height / 12),
-//                 button(),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-//
-//
-//   Widget clipShape() {
-//     return Stack(
-//       children: <Widget>[
-//         Opacity(
-//           opacity: 0.75,
-//           child: ClipPath(
-//             clipper: CustomShapeClipper(),
-//             child: Container(
-//               height: _large? _height/8 : (_medium? _height/7 : _height/6.5),
-//               decoration: BoxDecoration(
-//                 gradient: LinearGradient(
-//                   colors: [Color(0xFFD3032A), Color(0xFFCE8B98)],
-//                 ),
-//               ),
-//             ),
-//           ),
-//         ),
-//         Opacity(
-//           opacity: 0.5,
-//           child: ClipPath(
-//             clipper: CustomShapeClipper2(),
-//             child: Container(
-//               height: _large? _height/12 : (_medium? _height/11 : _height/10),
-//               decoration: BoxDecoration(
-//                 gradient: LinearGradient(
-//                   colors: [Color(0xFFD3032A), Color(0xFFCE8B98)],
-//                 ),
-//               ),
-//             ),
-//           ),
-//         ),
-//       ],
-//     );
-//   }
-//
-//   Widget firstname() {
-//     return Container(child:
-// Text("name"),
-//       // child: FutureBuilder<List<Userdata>>(
-//       //   // future: fetchStudent(),
-//       //   builder: (context, snapshot) {
-//       //
-//       //     if (!snapshot.hasData) return Center(
-//       //         child: CircularProgressIndicator()
-//       //     );
-//       //     return ListView(
-//       //       scrollDirection: Axis.vertical,
-//       //       shrinkWrap: true,
-//       //       children: snapshot.data!
-//       //           .map((data) => Row(children: <Widget>[
-//       //         GestureDetector(
-//       //           child: Row(
-//       //               crossAxisAlignment: CrossAxisAlignment.center,
-//       //               children: [
-//       //                 Padding(
-//       //                     padding: EdgeInsets.fromLTRB(80, 10, 5, 10),
-//       //                     child: Text("Name",
-//       //                         style: TextStyle(fontSize: 20,fontStyle: FontStyle.normal,color: Color(0xFF3F3C3D)),
-//       //                         textAlign: TextAlign.left))
-//       //
-//       //               ]),),
-//       //         Padding(
-//       //             child: Text(
-//       //               data.userFirstName,
-//       //               style: new TextStyle(fontSize: 20,fontStyle: FontStyle.normal,color: Color(0xFF3F3C3D)),
-//       //               textAlign: TextAlign.right,
-//       //             ),
-//       //             padding: EdgeInsets.all(2.0)),
-//       //       ],))
-//       //           .toList(),
-//       //     );
-//       //   },
-//       // ),
-//     );
-//   }
-//
-//   Widget lastname() {
-//     return Container(
-//       child:
-//       Text("name"),
-//     );
-//   }
-//   Widget emailid() {
-//     return Container(child:
-//       Text("name"),
-//       // child: FutureBuilder<List<Userdata>>(
-//       //   // future: fetchStudent(),
-//       //   builder: (context, snapshot) {
-//       //
-//       //     if (!snapshot.hasData) return Center(
-//       //         child: CircularProgressIndicator()
-//       //     );
-//       //     return ListView(
-//       //       scrollDirection: Axis.vertical,
-//       //       shrinkWrap: true,
-//       //       children: snapshot.data!
-//       //           .map((data) => Row(children: <Widget>[
-//       //         GestureDetector(
-//       //           child: Row(
-//       //               crossAxisAlignment: CrossAxisAlignment.center,
-//       //               children: [
-//       //                 Padding(
-//       //                     padding: EdgeInsets.fromLTRB(80, 10,5, 10),
-//       //                     child: Text("Email-Id",
-//       //                         style: TextStyle(fontSize: 20,fontStyle: FontStyle.normal,color: Color(0xFF3F3C3D)),
-//       //                         textAlign: TextAlign.left))
-//       //
-//       //               ]),),
-//       //         Padding(
-//       //             child: Text(
-//       //               data.userEmail,
-//       //               style: new TextStyle(fontSize: 20,fontStyle: FontStyle.normal,color: Color(0xFF3F3C3D)),
-//       //               textAlign: TextAlign.left,
-//       //             ),
-//       //             padding: EdgeInsets.all(2.0)),
-//       //       ],))
-//       //           .toList(),
-//       //     );
-//       //   },
-//       // ),
-//     );
-//   }
-//
-//
-//
-//   Widget button() {
-//     return RaisedButton(
-//       elevation: 0,
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-//       onPressed: () {
-//
-//       },
-//       textColor: Colors.white,
-//       padding: EdgeInsets.all(0.0),
-//       child: Container(
-//         alignment: Alignment.center,
-// //        height: _height / 20,
-//         width:_large? _width/4 : (_medium? _width/3.75: _width/3.5),
-//         decoration: BoxDecoration(
-//           borderRadius: BorderRadius.all(Radius.circular(20.0)),
-//           gradient: LinearGradient(
-//             colors: <Color>[Color(0xFF9B0437), Color(0xFF9B0437)],
-//           ),
-//         ),
-//         padding: const EdgeInsets.all(12.0),
-//         child: Text('SIGN UP', style: TextStyle(fontSize: _large? 14: (_medium? 12: 10)),),
-//       ),
-//     );
-//   }
-//}

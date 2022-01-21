@@ -10,6 +10,7 @@ import 'package:kings_dharbar1/kings_dharbar/User/Details/responsive_ui.dart';
 import 'package:kings_dharbar1/kings_dharbar/User/Details/signup.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../MainScreen.dart';
 import 'custom_shape.dart';
 
 
@@ -276,21 +277,20 @@ class _MyHomePageState extends State<MyHomePage> {
           print(_email);
           print(_password);
           auth.signInWithEmailAndPassword(email: _email!, password: _password!).then((value){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>Sucessscreen(_email!)));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Dashboard()));
           }).catchError((onError){
             if(onError.toString().contains("The user may have been deleted")){
               print("User is not in DB, Please register as a new one.");
             }else{
               print(onError.toString());
             }
-
           });
           // auth.createUserWithEmailAndPassword(email: _email, password: _password!).then((_){
           //   Navigator.push(context, MaterialPageRoute(builder: (context)=>Sucessscreen(user.text)));
           // });
 
         }else {
-          //TODO: Show missing text to users
+          showInSnackBar("Incorrect credentials");
         }
 
       },

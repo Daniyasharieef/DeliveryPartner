@@ -275,7 +275,7 @@ class _MyHomePageState extends State<MyHomePage> {
         if (_formKey.currentState!.validate()) {
           auth.createUserWithEmailAndPassword(email: _email!, password: _password!).then((_){
             auth.signInWithEmailAndPassword(email: _email!, password: _password!);
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>Sucessscreen(_email!)));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Sucessscreen()));
           });
         } else{
           showInSnackBar("Incorrect credentials");

@@ -331,72 +331,74 @@
 183-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\be1f31d795f15c1bd24708ca9c440629\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 184
 185        <activity
-185-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+185-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
 186            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-186-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+186-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
 187            android:excludeFromRecents="true"
-187-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+187-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
 188            android:exported="false"
-188-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+188-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
 189            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-189-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+189-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
 190        <!--
 191            Service handling Google Sign-In user revocation. For apps that do not integrate with
 192            Google Sign-In, this service will never be started.
 193        -->
 194        <service
-194-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+194-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
 195            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-195-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+195-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
 196            android:exported="true"
-196-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
-197            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-197-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6e9fedb996998210efbc5c96ce56b14e\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
-198
-199        <activity
-199-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\f3d1e61e48a3c4c2b9f4d2ffc401af39\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-200            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-200-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\f3d1e61e48a3c4c2b9f4d2ffc401af39\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-201            android:exported="false"
-201-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\f3d1e61e48a3c4c2b9f4d2ffc401af39\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-202            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-202-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\f3d1e61e48a3c4c2b9f4d2ffc401af39\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-203
-204        <receiver
-204-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
-205            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-205-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
-206            android:enabled="true"
-206-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
-207            android:exported="false" >
-207-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
-208        </receiver>
-209
-210        <service
-210-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
-211            android:name="com.google.android.gms.measurement.AppMeasurementService"
-211-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
-212            android:enabled="true"
-212-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
-213            android:exported="false" />
-213-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
-214        <service
-214-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
-215            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-215-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
-216            android:enabled="true"
-216-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
-217            android:exported="false"
-217-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
-218            android:permission="android.permission.BIND_JOB_SERVICE" />
-218-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
-219
-220        <meta-data
-220-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-221            android:name="com.google.android.gms.version"
-221-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-222            android:value="@integer/google_play_services_version" />
-222-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-223    </application>
-224
-225</manifest>
+196-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+197            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+197-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+198            android:visibleToInstantApps="true" />
+198-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\933009813afddbd11cc84c781f3e35e5\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+199
+200        <activity
+200-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\37425ca1da537beeff65bfee35ec9b80\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+201            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+201-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\37425ca1da537beeff65bfee35ec9b80\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\37425ca1da537beeff65bfee35ec9b80\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+203-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\37425ca1da537beeff65bfee35ec9b80\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+204
+205        <receiver
+205-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
+206            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+206-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
+207            android:enabled="true"
+207-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
+208            android:exported="false" >
+208-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
+209        </receiver>
+210
+211        <service
+211-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
+212            android:name="com.google.android.gms.measurement.AppMeasurementService"
+212-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
+213            android:enabled="true"
+213-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
+214            android:exported="false" />
+214-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
+215        <service
+215-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
+216            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+216-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
+217            android:enabled="true"
+217-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
+218            android:exported="false"
+218-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
+219            android:permission="android.permission.BIND_JOB_SERVICE" />
+219-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\fd0d38ce01edc83fe48187e44d4d7a3c\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
+220
+221        <meta-data
+221-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+222            android:name="com.google.android.gms.version"
+222-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+223            android:value="@integer/google_play_services_version" />
+223-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\2ffdea9840cb447d8a46ba75a1207d80\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+224    </application>
+225
+226</manifest>

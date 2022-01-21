@@ -7,6 +7,7 @@ import 'package:kings_dharbar1/kings_dharbar/User/Details/responsive_ui.dart';
 import 'package:kings_dharbar1/kings_dharbar/User/Details/signin.dart';
 
 import '../../color.dart';
+import '../MainScreen.dart';
 
 
 
@@ -124,7 +125,7 @@ class _RegisterState extends State<Signup> {
         };
         ref.child('Customers').push().set(data).then((v) {
           // _formKey.currentState!.reset();
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>Sucessscreen(_email!)));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Dashboard()));
         });
         }).catchError((onError){
         if(onError.toString().contains("The user may have been deleted")){

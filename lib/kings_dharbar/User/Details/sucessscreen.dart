@@ -36,7 +36,7 @@ class SucessscreenState extends State<Sucessscreen>
   void navigationPage() {
 
     Navigator.pushReplacement(
-        context, new MaterialPageRoute(builder: (context) => Profilepages(_email)));
+        context, MaterialPageRoute(builder: (context) => Profilepages(_email)));
   }
 
   @override

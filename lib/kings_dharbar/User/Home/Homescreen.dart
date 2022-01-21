@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kings_dharbar1/kings_dharbar/User/Categories/categories.dart';
 
+import 'menulist.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -15,10 +17,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-        body:TeamsPage(
-    ),
-
-    ));
+          body: TeamsPage(),
+        ));
   }
 }
 
@@ -46,7 +46,6 @@ class _TeamsState extends State<TeamsPage> {
     Contact("6.Kate William", "+91 9658245236"),
   ];
 
-
   @override
   void initState() {
     super.initState();
@@ -54,102 +53,148 @@ class _TeamsState extends State<TeamsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: SingleChildScrollView(child:
-            ConstrainedBox(
-              constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
-              child:   Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  TextField(
-                    cursorWidth: 10,
-                    onChanged: (value) {
-                      setState(() {});
-                    },
-                    style: const TextStyle(fontSize: 10),
-                    controller: editingController,
-                    decoration: const InputDecoration(
-                        prefixIcon: Icon(
-                          Icons.search,
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10),
-                          ),
-                        ),
-                        hintText: ""),
-                  ),
-    const SizedBox(height: 10),
-                 Text(
-                      "Restuarnts Around You ",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight:FontWeight.bold,color: Colors.black),
-                      textAlign: TextAlign.center,
+    return Scaffold(appBar: AppBar(centerTitle:true,title: Text("HomeScreen"),
+        backgroundColor: Color(0xFFA90725),
+    ),
+        body:
+            // SingleChildScrollView(child:
+            //  ListView(
+            //    children:[ TextField(
+            //      cursorWidth: 10,
+            //      onChanged: (value) {
+            //        setState(() {});
+            //      },
+            //      style: const TextStyle(fontSize: 10),
+            //      controller: editingController,
+            //      decoration: const InputDecoration(
+            //          prefixIcon: Icon(
+            //            Icons.search,
+            //          ),
+            //          border: OutlineInputBorder(
+            //            borderRadius: BorderRadius.all(
+            //              Radius.circular(10),
+            //            ),
+            //          ),
+            //          hintText: ""),
+            //    ),
+            //   const SizedBox(height: 10),
+            //   Text(
+            //     "Restuarnts Around You ",
+            //     style: TextStyle(
+            //         fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+            //     textAlign: TextAlign.center,
+            //   ),
+            ListView.builder(
+                padding: const EdgeInsets.all(0.5),
+                itemCount: words.length,
+                itemBuilder: (context, index) {
+                  return
+                      // Card(
+                      // shadowColor: Colors.white60,
+                      // elevation: 20,
+                      // shape: RoundedRectangleBorder(
+                      //     borderRadius: BorderRadius.circular(20)),
+                      // child:
+                      // InkWell(
+                      //                                   splashColor: Colors.orange,
+                      //                                   onTap: () {
+                      //                                     print("menu");
+                      //                                     Navigator.push(
+                      //                                         context,
+                      //                                         MaterialPageRoute(
+                      //                                             builder: (_) => Categories()));
+                    InkWell(
+                        onTap: (){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>MenuList()));
+                        },
+                        child:
+                      Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            const SizedBox(height: 10),
+                            const Text(
+                              "Restaurants  ",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black),
+                              textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: 10),
+                            const Center(
+                              child: Image(
+                                width: 1000,
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                  "assets/foodres.jpg",
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 10),
+                            Divider(height: 10),
+                            Row(
+                              children: [
+                                Text(
+                                  "Hotel Name",
+                                  style: TextStyle(
+                                      fontSize: 30, color: Colors.black),
+                                ),
+                                SizedBox(width: 100),
+                                IconButton(
+                                    color: Colors.red,
+                                    icon: Icon(Icons.favorite_outline_outlined,
+                                        color: Colors.red),
+                                    onPressed: () {}),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Menu List",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w100,
+                                      color: Colors.black),
+                                ),
+                                SizedBox(width: 190),
+                                Container( decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: [
+                                    BoxShadow(color: Colors.green, spreadRadius: 3),
+                                  ],
+                                ),
+                                  width: 35,
+                                  height: 20,
+                                  child: Text(
+                                    "5.67k",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w100,
+                                        color: Colors.black),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 10),
+                            Divider(thickness: 0.5,),
+                            Center(
+                              child: Text(
+                                "Hotel Address",textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w100,
+                                    color: Colors.black),
+                              ),
+                            ),
+                          ]),
                     ),
-
-    Expanded(
-    child: ListView.builder(
-    padding: const EdgeInsets.all(15),
-    itemCount: words.length,
-    itemBuilder: (context, index) {
-    return  Card(
-      shadowColor: Colors.white60,
-      elevation: 20,
-      shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(20)
-      ),
-      child: InkWell(
-    splashColor: Colors.orange,
-    onTap: () {
-      print("menu");
-      Navigator.push(
-          context, MaterialPageRoute(builder: (_) => Categories()));
-      Container(padding: EdgeInsets.all(10),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              const SizedBox(height: 10), const Center(
-                child: Text(
-                  "Hotel Name",
-                  style: TextStyle(
-                      fontSize: 20, color: Colors.black),
-                ),
-              ), const SizedBox(height: 10),
-              const FittedBox(
-                fit: BoxFit.contain, child:
-              Center(
-                child: Image(
-                  image: AssetImage("assets/foodres.jpg"),
-                ),
-              ),
-              ), const SizedBox(height: 10),
-              const Center(
-                child: Text(
-                  "Menu List ",
-                  style: TextStyle(
-                      fontSize: 20, color: Colors.black),
-                ),
-              ),
-              IconButton(
-                  color: Colors.red,
-                  icon: Icon(
-                      Icons.favorite_outline_outlined, color: Colors.red),
-                  onPressed: () {}
-              ),
-              const Text("549.5k", style: TextStyle(
-                  fontSize: 20, color: Colors.black),),
-              const SizedBox(height: 10),
-            ]),
-      );
-
-    }  ),
-    );
-    }))
-   ] ))));
-
+                  ));
+                }));
+    // )));
   }
 }
-
-
-

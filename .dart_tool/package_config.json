@@ -219,7 +219,7 @@
     },
     {
       "name": "google_sign_in",
-      "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.2.2",
+      "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -525,7 +525,7 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.3",
+      "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.6",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -554,7 +554,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-01-14T11:53:32.087207Z",
+  "generated": "2022-01-21T06:15:20.486999Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

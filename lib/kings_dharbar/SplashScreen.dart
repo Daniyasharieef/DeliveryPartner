@@ -18,7 +18,7 @@ class SplashScreenState extends State<SplashScreen>
   var _visible = true;
 
   String msg='';
-  late String email ;
+   String? email ;
 
   late AnimationController animationController;
   late Animation<double> animation;
@@ -45,11 +45,11 @@ class SplashScreenState extends State<SplashScreen>
 
      if (email==email) {
     //   //Navigator.pushNamed(context, '/login');
-    //   Navigator.push(
-    //       context, MaterialPageRoute(builder: (_) => Introscreen()));
-    // } else {
       Navigator.push(
-          context, MaterialPageRoute(builder: (_) => Profilepages(email)));
+          context, MaterialPageRoute(builder: (_) => Introscreen()));
+    } else {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (_) => Profilepages(email!)));
     }
 
   }
@@ -61,12 +61,12 @@ class SplashScreenState extends State<SplashScreen>
     email = "";
     getSharedPrefs();
 
-    animationController = new AnimationController(
-        vsync: this, duration: new Duration(seconds: 2));
+    animationController =  AnimationController(
+        vsync: this, duration: const Duration(seconds: 2));
     animation =
-    new CurvedAnimation(parent: animationController, curve: Curves.easeOut);
+     CurvedAnimation(parent: animationController, curve: Curves.easeOut);
 
-    animation.addListener(() => this.setState(() {}));
+    animation.addListener(() => setState(() {}));
     animationController.forward();
 
     setState(() {
@@ -82,7 +82,7 @@ class SplashScreenState extends State<SplashScreen>
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          new Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.end,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[

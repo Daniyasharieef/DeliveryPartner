@@ -34,27 +34,27 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard > with TickerProviderStateMixin{
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
 String? email;
 
-  Future<Null> getSharedPrefs() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    print("email");
-    setState(() {
-      email =  prefs.getString("counter")!;
-      print(email);
-    });
-
-  }
-
-  @override
-  void initState() {
-    print("ini");
-    super.initState();
-    email = "";
-    getSharedPrefs();
-
-  }
+  // Future<Null> getSharedPrefs() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   print("email");
+  //   setState(() {
+  //     email =  prefs.getString("counter")!;
+  //     print(email);
+  //   });
+  //
+  // }
+  //
+  // @override
+  // void initState() {
+  //   print("ini");
+  //   super.initState();
+  //   email = "";
+  //   getSharedPrefs();
+  //
+  // }
 
 
 
@@ -80,19 +80,6 @@ String? email;
       "My Account"
     ];
     return Scaffold(
-      appBar :AppBar(
-        title: Text(_children_title.elementAt(_selectedIndex)),
-        backgroundColor: Color(0xFFA90725),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.logout,color: Colors.white),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => Profilepages(email!)));
-            },
-          ),
-        ],
-      ),
       body: Center(
         child: _children.elementAt(_selectedIndex),
       ),
