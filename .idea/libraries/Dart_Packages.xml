@@ -5,7 +5,7 @@
         <entry key="archive">
           <value>
             <list>
-              <option value="$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8/lib" />
+              <option value="$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.9/lib" />
             </list>
           </value>
         </entry>
@@ -649,7 +649,7 @@
       </option>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8/lib" />
+      <root url="file://$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.9/lib" />
       <root url="file://$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
       <root url="file://$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
       <root url="file://$USER_HOME$/Downloads/sdk flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib" />

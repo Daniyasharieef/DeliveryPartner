@@ -5,10 +5,10 @@
 
 // @dart = 2.15
 
-// When `package:kings_dharbar1/kings_dharbar/main.dart` defines `main`, that definition is shadowed by the definition below.
-export 'package:kings_dharbar1/kings_dharbar/main.dart';
+// When `package:kings_dharbar1/main.dart` defines `main`, that definition is shadowed by the definition below.
+export 'package:kings_dharbar1/main.dart';
 
-import 'package:kings_dharbar1/kings_dharbar/main.dart' as entrypoint;
+import 'package:kings_dharbar1/main.dart' as entrypoint;
 import 'dart:io'; // flutter_ignore: dart_io_import.
 import 'package:shared_preferences_linux/shared_preferences_linux.dart';
 import 'package:shared_preferences_windows/shared_preferences_windows.dart';

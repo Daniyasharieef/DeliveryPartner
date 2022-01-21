@@ -12,6 +12,7 @@ MERGED from [:cloud_firestore] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdh
 MERGED from [:firebase_core] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-58:12
 MERGED from [:flutter_local_notifications] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:google_sign_in] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a35e7deafbbca66133ce715fee63e7b5\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -226,6 +227,8 @@ MERGED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharb
 MERGED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -458,6 +461,18 @@ ADDED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharba
 		ADDED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
 	android:name
 		ADDED from [:image_picker] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+queries
+ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:15
+intent#action:name:android.intent.action.VIEW+data:scheme:upi
+ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:18
+action#android.intent.action.VIEW
+ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-65
+	android:name
+		ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:9:21-62
+data
+ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-42
+	android:scheme
+		ADDED from [:upi_india] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\upi_india\intermediates\library_manifest\debug\AndroidManifest.xml:11:19-39
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [:flutter_local_notifications] C:\Users\Dell\AndroidStudioProjects\Hotel_kingsdharbar\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
 	android:name
@@ -542,10 +557,6 @@ ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\cach
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
 category#android.intent.category.DEFAULT
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
 	android:name
@@ -554,14 +565,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\48db3a26d0e210f3bf460c0f3f302962\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
 	android:excludeFromRecents
