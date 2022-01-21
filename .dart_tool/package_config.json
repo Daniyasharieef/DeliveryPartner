@@ -518,6 +518,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "upi_india",
+      "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/upi_india-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/Dell/Downloads/sdk%20flutter/flutter_windows_2.5.2-stable/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1",
       "packageUri": "lib/",
@@ -554,7 +560,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-01-21T06:15:20.486999Z",
+  "generated": "2022-01-21T08:03:29.557750Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }
